@@ -1,2 +1,8 @@
 # COSP_Flow_Shop
-This is a set of generated problem instances which has been used for computational experiments for a scientific paper. The csv files include processing times of the jobs as well as the best known solution for the respective problem instance.
+This is a set of generated problem instances which have been used for computational experiments for a scientific paper. The paper addresses the minimization of the total completion time of the customer order scheduling problem in an m-machine permutaion flow shop environment. The csv files include processing times of the jobs as well as the best known solution for the respective problem instance.
+
+## Structure of the CSV Files
+Each csv-file has the same structure. The title of a csv-file is "instance-n-o-m-i", where n represents the number of orders, o the number of jobs per order, m the number of machines in the (permutation) flow shop, and i the instance number.
+In the original paper, instances numbered 0–9 were used for parameter setting, while instances numbered 10–29 were used for algorithm comparison.
+In the header of each csv-file, the problem instance size is given in the following order: number of orders, number of jobs per order, number of machines. This is followed by the instance number. Finally, the lowest known total completion time of the instance for the customer order scheduling problem in an m-machine permutation flow shop environment is provided.
+In the following rows, the order-ids and processing times are provided. For each order, the first row specifies the order-id, e.g., 0. The subsequent rows list the processing times. Each row contains the processing times for one job of the corresponding order. The listing follows the machine sequence, i.e., the first column contains the processing time for the first machine, the second column the processing time for the second machine, and so on.
